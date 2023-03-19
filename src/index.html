@@ -11,7 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Homework 11</title>
   </head>
   <body>
@@ -24,14 +23,23 @@
           autocomplete="off"
           placeholder="Search images..."
         />
-        <button type="submit">Search</button>
+        <button type="submit" class="search-btn">
+          <svg class="search-icon" width="12" height="12">
+            <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
       </form>
     </header>
+    <main>
+      <ul class="gallery"></ul>
+      <div id="sentinel"></div>
 
-    <div class="gallery"></div>
-
-    <button type="button" class="load-more hidden">Load more</button>
-
+      <button class="up-button" type="button">
+        <svg class="search-icon" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-circle-up"></use>
+        </svg>
+      </button>
+    </main>
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>
