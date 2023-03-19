@@ -1,5 +1,5 @@
 body {
-  background-color: #cdfff8;
+  background-color: #52e2cfde;
   font-family: monospace;
   margin: 0;
 }
@@ -30,9 +30,8 @@ body {
   min-width: 100px;
   height: 18px;
   padding: 5px 10px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 15px 3px;
   border: 1px solid #000000;
-  border-right-width: 0;
   outline: none;
 
   font-weight: 800;
@@ -40,18 +39,23 @@ body {
   font-family: monospace;
 }
 .search-input:focus {
-  box-shadow: 0px 0px 10px 0px rgba(230, 25, 25, 0.906);
+  box-shadow: 0px 0px 10px 0px rgb(201, 16, 16);
 }
 .search-btn {
+  margin-left: 5px;
   height: 30px;
   cursor: pointer;
   background-color: #16e8e1;
   border: 1px solid #000000;
-  border-radius: 0 5px 5px 0;
+  border-radius: 15px 3px;
   align-content: center;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.search-btn:hover,
+.search-btn:focus {
+  box-shadow: 0px 0px 10px 0px rgb(201, 16, 16);
 }
 
 .gallery {
@@ -116,18 +120,18 @@ body {
 .up-button {
   display: none;
   position: fixed;
-  bottom: 10px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
   z-index: 2;
   border: none;
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  animation: pulse 3s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite;
 
-  background-color: #2f4f4f;
-  fill: #dcdcdc;
+  background-color: #022929bd;
+  fill: #ffffff5c;
 }
 .up-button.show {
   display: flex;
@@ -136,7 +140,7 @@ body {
 @keyframes pulse {
   0% {
     transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0 0 0 0 rgba(19, 199, 205, 0.881);
   }
 
   70% {
